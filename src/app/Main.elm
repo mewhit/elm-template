@@ -1,6 +1,7 @@
 port module Main exposing (..)
 
-import Html exposing (Html, div, program, text)
+import Html exposing (Html, div, text)
+import Browser
 
 
 type alias Model =
@@ -11,9 +12,9 @@ type Msg
     = None
 
 
-main : Program Never Model Msg
+main : Program () Model Msg
 main =
-    program
+    Browser.document
         { init = init
         , view = view
         , update = update
@@ -21,9 +22,9 @@ main =
         }
 
 
-init : ( Model, Cmd Msg )
-init =
-    {} ! [ Cmd.none ]
+init : () -> ( Model, Cmd Msg )
+init _ =
+  ( {}, Cmd.none )
 
 
 subscriptions : Model -> Sub Msg
@@ -33,9 +34,9 @@ subscriptions model =
 
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
-    {} ! [ Cmd.none ]
+    ( {}, Cmd.none )
 
 
-view : Model -> Html Msg
+view : Model -> Browser.Document Msg
 view model =
-    div [] [ text "hello world" ]
+    { title = "Hello template", body = [ text "hello world" ]}

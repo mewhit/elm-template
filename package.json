@@ -1,7 +1,7 @@
 {
   "name": "TemplateForElm",
   "version": "1.0.0",
-  "summary": "Build Drawing App",
+  "summary": "Template for webpack with elm 0.19",
   "source-directories": [
     "src",
     "dist"
@@ -13,16 +13,20 @@
   },
   "dependencies": {
     "css-loader": "^0.28.7",
-    "elm-webpack-loader": "^4.4.0",
+    "elm-webpack-loader": "^5.0.0",
     "file-loader": "^1.1.5",
     "foreman": "^2.0.0",
     "ify-loader": "^1.1.0",
+    "install": "^0.12.1",
+    "node-sass": "^4.9.3",
+    "npm": "^6.4.1",
+    "sass-loader": "^7.1.0",
     "style-loader": "^0.19.0",
     "url-loader": "^0.6.2",
     "webpack": "^3.8.1",
     "webpack-dev-server": "^2.9.4"
   },
-  "elm-version": "0.18.0 <= v < 0.19.0",
+  "elm-version": "0.19.0",
   "main": "index.js",
   "author": "Mike Whittom <mikewhittom27@gmail.com>"
 }
