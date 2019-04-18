@@ -16,16 +16,17 @@
   "main": "index.js",
   "author": "Mike Whittom <mikewhittom27@gmail.com>",
   "devDependencies": {
-    "css-loader": "^0.28.7",
-    "elm-webpack-loader": "^5.0.0",
+    "css-loader": "^2.1.1",
     "elm": "^0.19.0-bugfix6",
-    "file-loader": "^1.1.5",
+    "elm-webpack-loader": "^5.0.0",
+    "file-loader": "^3.0.1",
     "ify-loader": "^1.1.0",
-    "node-sass": "^4.9.3",
+    "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",
-    "style-loader": "^0.19.0",
-    "url-loader": "^0.6.2",
-    "webpack-dev-server": "^2.9.4",
-    "webpack": "^3.8.1"
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.3.1"
   }
 }
